@@ -1,0 +1,10 @@
+<h1>E PROPRIO QUEL NEGOZIO</h1>
+<button type="button" (click)="eventoClicco()">Premi per vedere la lista</button>
+
+<ul *ngFor="let lista of listaProd">
+<li><b> prodotto : {{lista.product_name}} </b></li>
+<li> id : {{lista._id.$oid}} </li>
+<li> fornitore : {{lista.supplier}} </li>
+<li> quantita : {{lista.quantity}} </li>
+<li> costo unitario : {{lista.unit_cost}} </li>
+</ul>
